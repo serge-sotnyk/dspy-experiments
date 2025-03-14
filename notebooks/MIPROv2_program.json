@@ -1,0 +1,36 @@
+{
+  "prog": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Compare the two provided Java code samples and determine if they are plagiarized. In the 'plagiarized' field, respond with \"Yes\" if the samples are plagiarized or \"No\" if they are not. Additionally, provide a clear explanation in the 'explanation' field outlining the reasons for your assessment, focusing on similarities in logic, structure, and implementation style.",
+      "fields": [
+        {
+          "prefix": "Code Sample 1:",
+          "description": "The first code sample to compare"
+        },
+        {
+          "prefix": "Code Sample 2:",
+          "description": "The second code sample to compare"
+        },
+        {
+          "prefix": "Explanation:",
+          "description": "Explanation or reason why the code samples are\/ are not plagiarized"
+        },
+        {
+          "prefix": "Plagiarized:",
+          "description": "Yes\/No indicating if code samples are plagiarized"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.11",
+      "dspy": "2.6.12",
+      "cloudpickle": "3.1"
+    }
+  }
+}

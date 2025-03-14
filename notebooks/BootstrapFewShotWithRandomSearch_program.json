@@ -1,0 +1,65 @@
+{
+  "prog": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "code_sample_1": "public class T5 {  public static void main(String[] args) {   System.out.print(\"Enter an integer: \");   java.util.Scanner input = new java.util.Scanner(System.in);   int number = input.nextInt();   reverse(number);  }  public static void reverse(int number) {   while (number != 0) {    int remainder = number % 10;    System.out.print(remainder);    number = number \/ 10;   }   System.out.println();  } }",
+        "code_sample_2": "public class L3 { public static void main(String[] args)  { int nomor = 0; System.out.print(\"Enter an integer: \"); java.util.Scanner input = new java.util.Scanner(System.in); nomor = input.nextInt(); balik(nomor); } public static void balik(int nomor) { int sisa = 0 ;  while (nomor != 0) { sisa = nomor % 10; System.out.print(sisa); nomor = nomor \/ 10; } System.out.println(); } }",
+        "explanation": "The two code samples exhibit a high degree of similarity in their structure and logic, including the same input prompt, the use of a while loop for reversing the integer, and the overall flow of the program. The only notable differences are the class names and variable names, which do not significantly alter the underlying implementation. This suggests that one code sample may have been derived from the other.",
+        "plagiarized": "Yes"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "public class T1 {  public static void main(String[] args) {  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  }  }",
+        "code_sample_2": "* * To change this license header, choose License Headers in Project Properties. * To change this template file, choose Tools | Templates * and open the template in the editor. *\/ \/** * * @author 19984DCAEA13176BBB694F62BA6B5B35 *\/ public class L1 { public static void main(String[] args) {  System.out.println(\"\"Welcome to Java\"\");  System.out.println(\"\"Welcome to Java\"\");  System.out.println(\"\"Welcome to Java\"\");  System.out.println(\"\"Welcome to Java\"\");  System.out.println(\"\"Welcome to Java\"\");  } }",
+        "explanation": "The two code samples are nearly identical in structure and content, with both printing the same message multiple times. The only differences are the class names and the formatting of the string literals (extra quotes in Sample 2). These minimal changes do not significantly alter the core functionality, indicating that one sample is likely derived from the other.",
+        "plagiarized": "Yes"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "import java.util.Scanner; public class T7 {  public static void main(String[] args) {   Scanner input = new Scanner(System.in);   System.out.print(\"Enter a 4 by 4 matrix row by row: \");   double[][] m = new double[4][4];   for (int i = 0; i < 4; i++)    for (int j = 0; j < 4; j++)     m[i][j] = input.nextDouble();   System.out.print(\"Sum of the elements in the major diagonal is \" + sumMajorDiagonal(m));  }  public static double sumMajorDiagonal(double[][] m) {   double sum = 0;   for (int i = 0; i < m.length; i++)    sum += m[i][i];   return sum;  } }",
+        "code_sample_2": "import java.util.*; public class L4 { public static double jumlahDiagonal(double[][] m) { double sum = 0; for (int i = 0; i < m.length; i++) { sum += m[i][i]; } return sum; } public static void print(double[][] m) { System.out.print(\"Sum of the elements in the major diagonal is \" + jumlahDiagonal(m)); } public static void main(String[] args) { Scanner sc = new Scanner(System.in); double[][] m = new double[4][4]; System.out.println(\"Enter a 4 by 4 matrix row by row: \"); for (int i = 0; i < 4; i++) { for (int j = 0; j < 4; j++) { m[i][j] = sc.nextDouble(); } } print(m); } }",
+        "explanation": "The two code samples exhibit a high degree of similarity in their structure and logic, particularly in how they handle the input of a 4x4 matrix and the calculation of the sum of the major diagonal. The method names and variable names differ slightly, but the core functionality and flow of the program are nearly identical, indicating that one may have been derived from the other.",
+        "plagiarized": "Yes"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "public class T4 {  public static void main(String[] args) {   System.out.println(\"Miles\\t\\tKilometers\");   System.out.println(\"-------------------------------\");   \/\/ Use while loop   int miles = 1;   while (miles <= 10) {    System.out.println(miles + \"\\t\\t\" + miles * 1.609);    miles++;   }  } }",
+        "code_sample_2": "public class L4 { public static void print(int mil) { while (mil <= 10) { System.out.println(mil + \"\\t\\t\" + mil * 1.609); mil++; } } public static void main(String[] args) { int mil = 1 ; System.out.println(\"Miles\\t\\tKilometers\"); System.out.println(\"-------------------------------\"); print(mil); } }",
+        "explanation": "The two code samples exhibit a high degree of similarity in their logic and output formatting, including the same calculation for converting miles to kilometers and the same output structure. Although the second sample introduces a separate method for printing, the core functionality and flow of the program remain largely unchanged, indicating that one sample may have been derived from the other.",
+        "plagiarized": "Yes"
+      }
+    ],
+    "signature": {
+      "instructions": "Detect if two code samples are plagiarized. In plagiarized field answer only : Yes if the code samples are plagiarized, No otherwise. In explanation field add the reason why the code samples are\/ are not plagiarized.",
+      "fields": [
+        {
+          "prefix": "Code Sample 1:",
+          "description": "The first code sample to compare"
+        },
+        {
+          "prefix": "Code Sample 2:",
+          "description": "The second code sample to compare"
+        },
+        {
+          "prefix": "Explanation:",
+          "description": "Explanation or reason why the code samples are\/ are not plagiarized"
+        },
+        {
+          "prefix": "Plagiarized:",
+          "description": "Yes\/No indicating if code samples are plagiarized"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.11",
+      "dspy": "2.6.12",
+      "cloudpickle": "3.1"
+    }
+  }
+}

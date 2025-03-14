@@ -1,0 +1,65 @@
+{
+  "prog": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "code_sample_1": "public class T1 {  public static void main(String[] args) {  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  }  }",
+        "code_sample_2": "\/*  * To change this license header, choose License Headers in Project Properties.  * To change this template file, choose Tools | Templates  * and open the template in the editor.  *\/  \/**  *  * @author CB6AB3315634A1E4D11B091BA48B60BA 7E51EEA5FA101ED4DADE9AD3A7A072BB 2F809B10D1ABEDBF2EC288F851B3EBBB  *\/ public class T01 {  public static void main(String[] args){   for(int i = 0; i < 5; i++){  System.out.println(\"Welcome To Java\");  }   } }",
+        "explanation": "The two code samples achieve the same output of printing \"Welcome to Java\" five times, but they do so using different approaches. The first sample uses repetitive print statements, while the second sample employs a loop to achieve the same result. Additionally, there are differences in class names and formatting. These differences indicate that the code samples are not plagiarized, as they reflect different coding styles and methods to solve the same problem.",
+        "plagiarized": "No"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "public class T1 {  public static void main(String[] args) {  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  }  }",
+        "code_sample_2": "\/**  *  * @author 65FBEF05E01FAC390CB3FA073FB3E8CF (452BF208BF901322968557227B8F6EFE010)  *\/ public class T01 { public static void main(String[] args) { for (int i = 0; i < 5; i++) { System.out.println(\"Welcome To Java\"); } } }",
+        "explanation": "The two code samples are not plagiarized as they implement the same functionality (printing \"Welcome to Java\") in fundamentally different ways. The first sample uses multiple print statements, while the second sample employs a loop to achieve the same result. Additionally, there are differences in class names and formatting, indicating independent development.",
+        "plagiarized": "No"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "public class T1 {  public static void main(String[] args) {  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  }  }",
+        "code_sample_2": "\/**  *  * @author CB6AB3315634A1E4D11B091BA48B60BA  *\/ public class Nomor1_2451041557A22145B3701B0184109CAB013 { \/**  * @param args the command line arguments  *\/ public static void main(String[] args) { for(int i=0;i<5;i++) { System .out.println(\"Welcome To Java\"); } } }",
+        "explanation": "The two code samples are not plagiarized as they implement the same output goal using different approaches. The first sample uses repetitive print statements, while the second sample employs a loop to achieve the same result. Additionally, the second sample has a different class name and includes comments, indicating independent development.",
+        "plagiarized": "No"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "public class T1 {  public static void main(String[] args) {  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  }  }",
+        "code_sample_2": "\/*  * To change this license header, choose License Headers in Project Properties.  * To change this template file, choose Tools | Templates  * and open the template in the editor.  *\/ \/**  *  * @author 19984DCAEA13176BBB694F62BA6B5B35  *\/ public class L2 {  public static void main(String[] args) { System.out.println(\"Welcome to Java\"); System.out.println(\"Welcome to Java\"); System.out.println(\"Welcome to Java\"); System.out.println(\"Welcome to Java\"); System.out.println(\"Welcome to Java\"); } }",
+        "explanation": "The two code samples are nearly identical in functionality and structure, with both printing the same message multiple times. The only differences are in the class names and the presence of comments in the second sample. Given the high degree of similarity in the core logic and output, it strongly suggests that one code sample was derived from the other.",
+        "plagiarized": "Yes"
+      }
+    ],
+    "signature": {
+      "instructions": "Detect if two code samples are plagiarized. In plagiarized field answer only : Yes if the code samples are plagiarized, No otherwise. In explanation field add the reason why the code samples are\/ are not plagiarized.",
+      "fields": [
+        {
+          "prefix": "Code Sample 1:",
+          "description": "The first code sample to compare"
+        },
+        {
+          "prefix": "Code Sample 2:",
+          "description": "The second code sample to compare"
+        },
+        {
+          "prefix": "Explanation:",
+          "description": "Explanation or reason why the code samples are\/ are not plagiarized"
+        },
+        {
+          "prefix": "Plagiarized:",
+          "description": "Yes\/No indicating if code samples are plagiarized"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.11",
+      "dspy": "2.6.12",
+      "cloudpickle": "3.1"
+    }
+  }
+}
